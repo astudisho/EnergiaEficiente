@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergiaEficiente", "EnergiaEficiente\EnergiaEficiente.csproj", "{DE7D9D2E-A0D4-4DB6-A4F3-9203C4979DCF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9CE02ACB-EBD0-43D2-A873-495FE9A4B1A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{13CCAE0C-B97F-41D2-A20F-50860819E976}"
+	ProjectSection(SolutionItems) = preProject
+		nginx\energiaeficiente.conf = nginx\energiaeficiente.conf
+		nginx\energiaeficiente.crt = nginx\energiaeficiente.crt
+		nginx\energiaeficiente.key = nginx\energiaeficiente.key
+		nginx\energiaeficiente.pfx = nginx\energiaeficiente.pfx
+		nginx\nginx.Dockerfile = nginx\nginx.Dockerfile
+		nginx\nginx.local.conf = nginx\nginx.local.conf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE7D9D2E-A0D4-4DB6-A4F3-9203C4979DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7D9D2E-A0D4-4DB6-A4F3-9203C4979DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7D9D2E-A0D4-4DB6-A4F3-9203C4979DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7D9D2E-A0D4-4DB6-A4F3-9203C4979DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE02ACB-EBD0-43D2-A873-495FE9A4B1A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE02ACB-EBD0-43D2-A873-495FE9A4B1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE02ACB-EBD0-43D2-A873-495FE9A4B1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE02ACB-EBD0-43D2-A873-495FE9A4B1A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6445D284-3C34-440F-AAA0-CE7833BD308A}
+	EndGlobalSection
+EndGlobal

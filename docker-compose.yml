@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  energiaeficiente:
+    image: ${DOCKER_REGISTRY-}energiaeficiente
+    build:
+      context: .
+      dockerfile: EnergiaEficiente/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000
+    ports:
+      - "5000:5000"
+  nginx:
+    build:
+     context: .
+     dockerfile: nginx/nginx.Dockerfile
+    depends_on:
+      - energiaeficiente
+    ports:
+     - "44395:443"
+     
