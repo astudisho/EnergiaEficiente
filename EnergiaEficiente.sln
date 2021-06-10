@@ -17,6 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{13CCAE0C
 		nginx\nginx.local.conf = nginx\nginx.local.conf
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "seq", "seq", "{AA3903B2-C6D8-4396-9CB8-32FF90C55712}"
+	ProjectSection(SolutionItems) = preProject
+		seq\seq.Dockerfile = seq\seq.Dockerfile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
